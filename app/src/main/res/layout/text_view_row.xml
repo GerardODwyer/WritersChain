@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/chainName_text"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="chainName"
+        android:textAlignment="viewStart"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/chainID_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:maxLines="1"
+        android:text="chainID"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chainName_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/chainAuthor_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="chainAuthor"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chainUpvotes_text" />
+
+    <TextView
+        android:id="@+id/chainDesc_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="chainDesc"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chainName_text" />
+
+    <TextView
+        android:id="@+id/chainGenre_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="chainGenre"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chainDesc_text" />
+
+    <TextView
+        android:id="@+id/dateCreated_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dateCreated"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chainID_text" />
+
+    <TextView
+        android:id="@+id/chapterCount_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="chapterCount"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chainGenre_text" />
+
+    <TextView
+        android:id="@+id/chainUpvotes_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="chainUpvotes"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateCreated_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
